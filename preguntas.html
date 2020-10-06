@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quizup</title>
+    <link rel="stylesheet" href="http://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="script2.js"></script>
+    <style>
+        body{
+            background: url("movimiento.gif");
+        }
+        h1{
+            text-align: center;
+            font-family: cursive;
+            color: red;
+        }
+        h4{
+            text-align: center;
+            font-family: cursive;
+            color: crimson;
+        }
+    </style>
+</head>
+<body>
+    <div class="container text-center">
+        <div class="row">
+            <div class="col-6">
+                <h1>Preguntas</h1>
+                <hr>
+                <h4>1. ¿Cuál es el lugar más frío de la tierra?</h4>
+                <input type="radio" name="p1" value="a">La Antartida
+                <input type="radio" name="p1" value="b">Europa
+                <input type="radio" name="p1" value="c">America
+                <input type="radio" name="p1" value="d">T.A.
+                <br>
+                <h4>2. ¿Quién escribió La Odisea?</h4>
+                <input type="radio" name="p2" value="a">Mario Vargas
+                <input type="radio" name="p2" value="b">Cesar Vallejo
+                <input type="radio" name="p2" value="c">Homero
+                <input type="radio" name="p2" value="d">James Joyce
+                <br>
+                <h4>3. ¿Cuál es el río más largo del mundo?</h4>
+                <input type="radio" name="p3" value="a">Bravo
+                <input type="radio" name="p3" value="b">Obi
+                <input type="radio" name="p3" value="c">Nilo
+                <input type="radio" name="p3" value="d">Amazonas
+                <br>
+                <h4>4. ¿En qué continente está Ecuador?</h4>
+                <input type="radio" name="p4" value="a">Europa
+                <input type="radio" name="p4" value="b">America
+                <input type="radio" name="p4" value="c">Asia
+                <input type="radio" name="p4" value="d">N.A.
+                <br>
+                <h4>5. ¿Qué tipo de animal es la ballena?</h4>
+                <input type="radio" name="p5" value="a">Mamifero
+                <input type="radio" name="p5" value="b">Anfivio
+                <input type="radio" name="p5" value="a">a y b
+                <input type="radio" name="p5" value="a">N.A.
+                <br>
+                <h4>6. ¿Quién pintó “la última cena”?</h4>
+                <input type="radio" name="p6" value="a">Rembrandt
+                <input type="radio" name="p6" value="b">Diego Velázquez
+                <input type="radio" name="p6" value="c">Vincent van Gogh
+                <input type="radio" name="p6" value="b">Leonardo da Vinci.
+                <br>
+                <h4>7. ¿En qué país se encuentra la torre de Pisa?</h4>
+                <input type="radio" name="p7" value="a">Paris
+                <input type="radio" name="p7" value="b">Italia
+                <input type="radio" name="p7" value="c">España
+                <input type="radio" name="p7" value="d">Francia
+                <br>
+                <h4>8. ¿Cuál es el océano más grande?</h4>
+                <input type="radio" name="p8" value="a">Pacifico
+                <input type="radio" name="p8" value="b">Antartico
+                <input type="radio" name="p8" value="c">Atlantico
+                <input type="radio" name="p8" value="d">Índico
+                <br>
+                <h4>9. ¿Cuál es el país más grande del mundo?</h4>
+                <input type="radio" name="p9" value="a">Peru
+                <input type="radio" name="p9" value="b">EE.UU
+                <input type="radio" name="p9" value="c">Rusia
+                <input type="radio" name="p9" value="d">Brasil
+                <br>
+                <h4>10. ¿Qué país tiene forma de bota?</h4>
+                <input type="radio" name="p10" value="a">Chile
+                <input type="radio" name="p10" value="b">Italia
+                <input type="radio" name="p10" value="c">Australia
+                <input type="radio" name="p10" value="d">Japon
+                <br><br>
+                <button onclick="evaluarQuizup()" class="btn btn-success">Evaluar</button>
+                <button onclick="resetQuizup()" class="btn btn-danger">Reset</button>
+            </div>
+            <div class="col-6" id="resultado">
+                <h1>Resultado</h1>
+                <hr>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
